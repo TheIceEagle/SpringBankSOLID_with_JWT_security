@@ -30,7 +30,7 @@ public class SecurityConfiguration {
             "/acccounts/**",
             "/h2-console/**",
             "/register",
-            " /authenticate"
+            "/authenticate"
             };
 
     private final JwtAuthenticationFilter jwtAuthFilter;
