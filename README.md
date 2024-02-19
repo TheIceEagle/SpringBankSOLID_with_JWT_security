@@ -1,9 +1,10 @@
-# SpringBankSOLID_No_DB
+# SpringBankSOLID RestApi
 Project was made using Spring Core framework
 
-This is a bank solid app made with spring framework
+This is a bank solid app made with Spring framework
+To run the app use the consoler command below
+```
+./mvnw spring-boot:run
+```
 
-```
-1.Open project in IDE and install all dependencies
-2.Hit the green button to start a project
-```
+
