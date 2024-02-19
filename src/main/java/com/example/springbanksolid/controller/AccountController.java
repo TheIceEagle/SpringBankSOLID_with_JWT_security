@@ -170,8 +170,8 @@ public class AccountController {
         String clientId = String.valueOf(client.getId());
         try {
             transactionWithdraw.execute(accountListingService.getClientAccount(clientId, accountIdFrom), requestTransaction.getAmount());
-            transactionDeposit.execute(accountListingService.getClientAccount(clientId, requestTransaction.getDestination_account_id()), requestTransaction.getAmount());
-            System.out.println(requestTransaction.getAmount() + "$ was transferred to " + accountListingService.getClientAccount(clientId, requestTransaction.getDestination_account_id()) +
+            transactionDeposit.execute(accountListingService.getAccount(requestTransaction.getDestination_account_id()), requestTransaction.getAmount());
+            System.out.println(requestTransaction.getAmount() + "$ was transferred to " + accountListingService.getAccount(requestTransaction.getDestination_account_id()) +
                     "from " + accountListingService.getClientAccount(clientId, accountIdFrom));
 
         } catch (Exception e) {
